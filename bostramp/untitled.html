@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+      <legend>Detalle de perfil</legend>
+       
+        <div>
+            <label for="">Nombre
+           <input id="nombre" name="nombre" type="text">
+           </label>
+            <label for="">Clave
+           <input id="clave" name="clave" type="password">
+           </label>
+            <label for="">Tel&eacute;fono
+           <input id="telefono" name="telefono" type="tel">
+           </label>
+            <label for="">Correo
+           <input id="correo" name="correo" type="email">
+           </label>
+            <label for="">Fecha
+           <input id="fecha" name="fecha" type="date">
+           </label>
+    </fieldset>
+    <br>
+    <fieldset>       
+           <div class="card-type">
+           <label for="">Tarjeta de Cr&eacute;dito
+           	<input id"credito" type="radio" name="tarjetadecredito">
+           </label>
+           <label for="">Visa
+           	<input id"visa" type="radio" name="txtvisa">
+           </label>
+           <label for="">Master Card
+           	<input id"mastercard" type="radio" name="txtmasterdcard">
+           </label>
+           <label for="">American Express
+           	<input id"americanexpress" type="radio" name="txtamericanexpress">
+           </label>
+           <label for="">Diners Club
+           	<input id"Diners" type="radio" name="txtdiners">
+           </label>
+          </div>
+        </div>
+
+        <div>
+          <div class="card-type">
+           <label for="">Tarjeta de Cr&eacute;dito
+           	<input id"credito" type="checkbox" name="tarjetadecredito">
+           </label>
+           <label for="">Visa
+           	<input id"visa" type="checkbox" name="txtvisa">
+           </label>
+           <label for="">Master Card
+           	<input id"mastercard" type="checkbox" name="txtmasterdcard">
+           </label>
+           <label for="">American Express
+           	<input id"americanexpress" type="checkbox" name="txtamericanexpress">
+           </label>
+           <label for="">Diners Club
+           	<input id"Diners" type="checkbox" name="txtdiners">
+           </label>
+           </div>
+           <br>
+              <div>
+          <label for=""> N&uacute;mero de Tarjeta<br>
+          <textarea rows="1" cols="30" id="number" name="descripcion" type="textarea"></textarea>
+        </label>
+        </div>
+        </div>
+       <br>
+       <br>
+        <div>
+          <label for=""> Descripci&oacute;n <br>
+          <textarea rows="4" cols="50" id="description" name="descripcion" type="textarea"></textarea>
+        </label>
+        </div>
+    <br>
+        <div>
+     	  <label for="">Pa&iacute;s <br>
+          <input type="datalist" name="country" list="lista-paises">	
+          <datalist id="lista-paises">
+          <option value="Colombia"></option>
+          <option value="Venezuela"></option>
+          <option value="Mexico"></option>
+          </datalist>
+     	</label>
+     </div>
+     <br>
+     <div id="button">
+     	<button type="submit" name="boton">Submit</button>
+     </div>
+    </fieldset>    
+</body>
+</html>

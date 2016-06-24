@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=angular.min.js></script>
+	<title></title>
+</head>
+<body>
+
+<div ng-app>
+
+<form>
+<div>
+<label>Operando1:</label>
+<input type="number" ng-model=operador1 placeholder="Ingresa un n&uacute;mero">
+</div>
+
+<div>
+<label>Operando2:</label>
+<input type="number" ng-model=operador2 placeholder="Ingresa un n&uacute;mero"><br>
+</div>
+
+<div> 
+<button ng-click="resultado=operador1*operador2">*</button>
+<label>{{resultado}}</label>
+</div>
+
+<div> 
+<button ng-click="resultado1=operador1/operador2">/</button>
+<label>{{resultado1}}</label>
+</div>
+
+<div> 
+<button ng-click="resultado2=operador1+operador2">+</button>
+<label>{{resultado2}}</label>
+</div>
+
+<div> 
+<button ng-click="resultado3=operador1-operador2">-</button>
+<label>{{resultado3}}</label>
+</div>
+</form>
+
+</div>
+</body>
+</html>
+

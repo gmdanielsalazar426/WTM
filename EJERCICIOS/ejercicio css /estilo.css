@@ -1,0 +1,21 @@
+body {
+  background-color: red; 
+  font-family: helvetica;
+  font-size: 12px
+}
+
+#p_red {
+	border: solid blue ;
+}
+
+.list {
+	list-style: none;
+}
+
+#puno:hover {
+	color: green;
+}
+
+.p1:hover {
+	color: blue;
+}

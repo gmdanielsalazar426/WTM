@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+
+<html data-ng-app="myApp">
+
+<head>
+
+	<meta charset="UTF-8">
+
+    <title>Aury Jaramillo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+​
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- angular -->
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+    <!-- css -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+    
+
+<body>
+
+	
+
+​
+
+	<form>
+
+		<div>
+
+		<label>Nombre</label>
+
+		<input type="text" ng-model="nombre">
+
+		</div>
+
+		<div>
+
+		<label>Apellido</label>
+
+		<input type="text" ng-model="apellido">
+
+		</div>
+
+		<div>
+
+		<label>{{"Hola "+nombre+" "+apellido}}</label>
+
+		</div>
+
+	</form>
+
+	<form>
+
+		<div>
+
+			<label>Operando 1</label>
+
+			<input type="number" ng-model="op1">
+
+		</div>
+
+		<div>
+
+			<label>Operando 2</label>
+
+			<input type="number" ng-model="op2">
+
+		</div>
+
+		<div>
+
+			<button ng-click="resultado=op1*op2">Multiplicar</button>
+
+			
+
+		</div>
+
+		<div>
+
+		<label>{{resultado}}</label>
+
+		</div>
+
+	</form>
+
+    <form>
+
+    	<div>
+
+		<input type="text" ng-model="texto" placeholder="Enter you input here...">
+
+		<p>{{texto }}</p>
+
+		<p ng-style="texto == (texto | reverse) ? {color:'red'} : {color:'blue'}">{{texto | reverse}}</p>
+
+    	</div>
+
+    	<p>{{texto == (texto | reverse) ? 'palindromo' : 'no palindromo'}}</p>
+
+    </form>
+
+    <script>
+
+		var myApp = angular.module('myApp',[]);
+
+		myApp.filter('reverse', function() {
+
+			return function(input) {
+
+				return input.split("").reverse().join("");
+
+			};
+
+		});
+
+​
+
+	</script>
+
+</body>
+
+</html>
+

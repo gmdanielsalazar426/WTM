@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Ahorcado</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var arreglo = ["bombero","carro","estudiante","edificio","corneta"];
+
+		var indiceAleatorio = Math.ceil(Math.random() *10) % arreglo.length;
+
+		document.write(indiceAleatorio + "<br>");
+
+		var palabraAleatoria = arreglo[indiceAleatorio];
+
+		document.write(palabraAleatoria + "<br>");
+        
+        for (var i = 0; i < 7; i++) {
+        
+        var letraUsuario = prompt ("Introduce una letra: "."");
+
+        var posLetras = new Array();
+        var encontrada = false;
+		for (var letra = 0,j = 0; letra < palabraAleatoria.length; letra++) {
+			 var letraMaquina = palabraAleatoria.charAt(letra);
+			 if (letraUsuario == letraMaquina) {
+                 posLetras[j] = letra;
+                 j++;
+                 encontrada = true;
+			 }
+		}
+		if (!encontrada) {
+			alert("Fallaste, intentalo de nuevo");
+		} else (encontrada);
+		alert ("Adivinaste!");
+	}
+
+
+	</script>
+
+</body>
+</html>
